@@ -25,13 +25,7 @@ print(20*"Jensen")
 print("jensen\n" *20)
 print("jensen\t" *20)
 print("hej\t"*10)
-
 print("Kör 70km/h i 1.5 timmar hur långt?\n", 70*1.5,"km")
-
-
-
-
-
 
 
 Question = input("What is 5-2")
@@ -40,3 +34,4 @@ if Question=="3":
     print("Correct")
 else:
     print("incorrect")
+
