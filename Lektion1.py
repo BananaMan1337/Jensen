@@ -23,8 +23,10 @@ print("banan"+"banan")
 print("banan","banan")
 print(20*"Jensen")
 print("jensen\n" *20)
+# \n = new line
 print("jensen\t" *20)
 print("hej\t"*10)
+#\t = tab
 print("Kör 70km/h i 1.5 timmar hur långt?\n", 70*1.5,"km")
 
 
