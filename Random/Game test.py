@@ -1,4 +1,7 @@
 name = input("What is your name?")
+#for x in name:
+ #   if x==Schwee:
+  #      break
 print("Greetings", name)
 
 purpose= input("What is thy purpose?")
