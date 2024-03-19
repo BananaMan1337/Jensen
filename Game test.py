@@ -14,3 +14,4 @@ else:
     print("THEN PAY WITH YOUR BLOOD")
     fight= input("Fight\t Magic\n Item\t Run")
     if fight.lower()=="fight"
+
