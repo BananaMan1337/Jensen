@@ -17,3 +17,5 @@ hours =int(input("Hur många timmar i veckan tänkte du att träna med oss?"))
 print("Vad kul", namn+"!", "För att träna", hours, "timmar i veckan så skulle det kosta", hours*fee,"kr per vecka")
 print (round (1337.1337,2))
 print (round (1337.1337))
+#Rounds up numbers, if you type (1337.1337) and round it it will round down, however if you add a comma with a number it will 
+#show that many decimal points.
