@@ -63,8 +63,8 @@ for n in range(5):
     print("hej")
 #for all variables in range (indentation), repeat 5x
 
-for n in range(5):
-print("hej")
+#for n in range(5):
+#print("hej")
 #No indentation so doesnt work
 
 for x in range(1,6):
@@ -75,3 +75,12 @@ for x in range(1,6):
 #In this case we specify we want it to start as 1, it is the first variable that X is, instead of the default 0
 #Therefore we get 1-5 instead of 0-5
     
+#print("Samuel\n"*15)
+#print("Khan\n"*20)
+    #these is one line of code that prints several of the same message
+
+for x in range(15):
+    print("Samuel")
+#This loops the same code 15 times instead to achieve the same goal
+for x in range(20):
+    print("Khan")
