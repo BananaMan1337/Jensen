@@ -54,7 +54,7 @@ for n in range(1,11):
     print(Number,"*", n ,"=",n*Number)
 #Now we instead have the user input the desired number to show that numbers multiplication table
     for a in range(1,11):
-    print("Table",a)
+        print("Table",a)
     for b in range(1,11):
         print(a*b)
 #prints the table number in between the two "for" arguments as the table number is the first for.
