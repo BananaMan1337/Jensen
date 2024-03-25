@@ -102,7 +102,7 @@ else:
     print("Bad input")
 
     #Asks for patients weight and then comparares the input to what meds it should give
-vikt = float(input("Hur mycket KG väger patienten?"))
+vikt = float(input("Hur många KG väger patienten?"))
 if vikt < 20:
     #If the weight is lower than 20
     print("Patienten ska ges 500mg per dag.")
