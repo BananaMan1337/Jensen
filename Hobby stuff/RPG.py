@@ -5,7 +5,8 @@
 #Strint for bookshelf push?
 #Add currency and looting in the room before leaving?
 #add charisma check and talk to guard
-
+#Use a function with a list to list all the options instead of print everytime and then call the function and an input to get 
+#the answer as to what they pick
 
 name=input("What is your name?")
 while True:
