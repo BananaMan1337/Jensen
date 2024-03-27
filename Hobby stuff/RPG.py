@@ -1,3 +1,12 @@
+#def bookshelffunction(var1,var2):
+#    strint = var1 + var2
+#    return strint
+#print(bookshelffunction(strength,intellect))
+#Strint for bookshelf push?
+#Add currency and looting in the room before leaving?
+#add charisma check and talk to guard
+
+
 name=input("What is your name?")
 while True:
     try:
