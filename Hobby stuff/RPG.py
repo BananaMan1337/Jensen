@@ -1,13 +1,12 @@
 #def bookshelffunction(var1,var2):
 #    strint = var1 + var2
 #    return strint
-#print(bookshelffunction(strength,intellect))
-#Strint for bookshelf push?
-#Add currency and looting in the room before leaving?
-#add charisma check and talk to guard
 #Use a function with a list to list all the options instead of print everytime and then call the function and an input to get 
 #the answer as to what they pick
 
+
+
+#region Start
 name=input("What is your name?")
 while True:
     try:
@@ -20,17 +19,32 @@ while True:
     except ValueError:
         print("Please enter only numbers and without decimals.")
         continue
+#endregion
+
+#region Wallet & Money
+wallet = 0
+def purchase (wallet, price):
+    if wallet >= price:
+        wallet = wallet - price
+        print(wallet,"gold left")
+        return True, wallet
+    else:
+        print("Not enough gold")
+        return False, wallet
+#endregion
 
 
 print("You awaken in a locked room. You cannot remember anything, but you know you dont want to stay here.")
 while True:
-    print("There is a door, a window, and a bookshelf.\n There seems to be someone on the other side of the door.")
+    print("There is a door, a window, and a bookshelf.\n There seems to be someone on the other side of the door.\n You realise you still have your wallet")
     start=input("Which point of interest do you pick?").lower()
-    accepted_strings = {"door", "window", "bookshelf"}
+    accepted_strings = {"door", "window", "bookshelf","wallet"}
     if start=="door":
         print("The door is made out of wood and looks quite sturdy.")
-        doorchoice=input("What do you want to do?\n Break the door down.\t Go back.").lower()
+        doorchoice=input("What do you want to do?\n Break the door down.\t Try to talk to the person on the other side.\t Go back.").lower()
         accepted_strings={"break","break door","break down door", "break the door down"}
+        accepted_strings2={"talk","talk to person","talk to door","speak","talk to the person on the other side"}
+
         if doorchoice in accepted_strings:
             if strength >=9:
                 print("Breaking the door proves a trivial task for you.")       
@@ -41,8 +55,36 @@ while True:
             elif strength <5:
                 print("You are not strong enough to break the door down")
                 continue
+
+
+
+        elif doorchoice in accepted_strings2:
+            print("You ask them where you are, they respond with\n \"Be quiet prisoner\"")
+            guardchoice = input("What do you want to do?\n Try to bribe the guard.\t Go back.").lower()
+            accepted_strings={"bribe","bribe the guard","try to bribe","try to bribe the guard"}
+
+
+
+            if guardchoice in accepted_strings:
+                result = purchase(wallet, 50)
+                BribeCheck = result[0]
+                wallet = result[1]
+                if BribeCheck == True and charisma >= 6:
+                    print("\"Fine, ill let you out. I better never see you again.\"")
+                elif BribeCheck == True and charisma < 6:
+                    print("\"Hah, thanks for the gold\"")
+                    continue
+                elif BribeCheck == False:
+                    print("\"Get back to your cell prisoner. You dont have enough gold.\"")
+                    continue
+                else: continue
+            else: continue
         else: continue
-        print("Stepping out into the corridor you see that the door fell on top of the guard you heard through the door. He has been knocked out.")
+
+
+
+
+        print("You exit the room and find yourself in a corridor.")
         while True:
             corridor=input("You are standing in the corridor.\n Go left? \t Go right?").lower()
             accepted_strings={"go left","go right","left","right"}
@@ -52,6 +94,10 @@ while True:
             else: continue
         break
     
+
+
+
+
     if start=="window":
         print("The window is quite high up, it seems to be a thin pane of glass.")
         windowchoice=input("What do you want to do?\n Climb the wall.\t Go back.").lower()
@@ -70,11 +116,16 @@ while True:
         print("You break the glass and climb out")
         break
 
+
+
+
     if start=="bookshelf":
         print("The bookshelf is filled with a curious assortment of books.")
-        bookshelfchoice=input("What do you want to do?\n Look for interesting books.\t Try to push the bookshelf.\t Go back.").lower()
+        bookshelfchoice=input("What do you want to do?\n Look for interesting books.\t Try to push the bookshelf.\t Loot.\t Go back.").lower()
         accepted_strings={"look for interesting books","look for books","books"}
         accepted_strings2={"push","try to push","try to push the bookshelf"}
+
+
         if bookshelfchoice in accepted_strings2:
             if strength >=9:
                 print("The bookshelf weighs nothing to you, you push it and reveal a door.")       
@@ -88,6 +139,8 @@ while True:
                 print("You are too weak to push it")
                 continue
             else:continue
+
+
         elif bookshelfchoice in accepted_strings:
             if 8<= intellect:
                 print("You easily spot a fake book among the many books you've already read. Pulling it out reveals a level which moves the bookcase and reveals a door")
@@ -95,7 +148,21 @@ while True:
                 print("After some pondering you notice a book that doesnt seem to fit in with the rest. Pulling it out reveals a lever which moves the bookcase and reveals a door")
             elif 0<= intellect <5:
                 print("After playing around and using the books as toys, you manage to fall and hit a suspicious book which reveals a lever that moves the bookcase and reveals a door")
+       
+       
+       
+        elif bookshelfchoice == "loot":
+            print("You find some gold")
+            wallet = wallet + 50
+            print("You now have", wallet, "gold")
+            continue
         else:continue
         print("You open the door and realise that it leads outside")  
         break  
+
+
+
+    if start =="wallet":
+        print("The wallet contains",wallet,"gold")
+        continue
 print("You feel the fresh air fill your lungs as you look to the sky. You have escaped.")
