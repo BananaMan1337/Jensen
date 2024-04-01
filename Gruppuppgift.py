@@ -9,19 +9,22 @@ def purchase (wallet, price):
         return False, wallet
 wallet = 0
 while True:
-    balanceadd = float(input("How much balance would you like to add?"))
-    confirmation = input("Are you sure you want to add this amount? Y/N").lower
-    accepted_strings={"yes","y","ja"}
-    if confirmation in accepted_strings:
-        wallet = wallet + balanceadd
-        print ("Balance added!")
-        break
-    else: continue
+    try:
+        balanceadd = float(input("How much balance would you like to add?"))
+        confirm = input("Are you sure you want to add this amount? Y/N").lower()
+        accepted_strings=("yes","y","ja")
+        if confirm in accepted_strings:
+            wallet = wallet + balanceadd
+            print ("Balance added!")
+            break
+    except ValueError:
+        print("Please enter only numbers and without decimals.")
+        continue
 
 while True:
-    ShoppingPath = input("What would you like to buy?\n Milk\t Bread\t Candy\t Check Wallet").lower
+    ShoppingPath = input("What would you like to buy?\n Milk\t Bread\t Candy\t Check Wallet").lower()
     if ShoppingPath == "milk":
-        input("Milk is $2, would you like to purchase?")
+        input("Milk is $2, would you like to purchase?").lower()
         if input in accepted_strings:
             result=purchase(wallet,2)
             successful = result[0]
@@ -31,7 +34,7 @@ while True:
                 
             else: continue
     elif ShoppingPath =="bread":
-        input("Bread is $5, would you like to purchase?")
+        input("Bread is $5, would you like to purchase?").lower()
         if input in accepted_strings:
             result=purchase(wallet,5)
             successful = result[0]
@@ -41,7 +44,7 @@ while True:
                 
             else: continue
     elif ShoppingPath =="candy":
-        input("candy is $1, would you like to purchase?")
+        input("candy is $1, would you like to purchase?").lower()
         if input in accepted_strings:
             result=purchase(wallet,1)
             successful = result[0]
