@@ -18,43 +18,44 @@ while True:
             print ("Balance added!")
             break
     except ValueError:
-        print("Please enter only numbers and without decimals.")
+        print("Please enter only numbers.")
         continue
 
 while True:
-    ShoppingPath = input("What would you like to buy?\n Milk\t Bread\t Candy\t Check Wallet").lower()
+    ShoppingPath = input("What would you like to browse?\n Milk\t Bread\t Candy\t Wallet").lower()
     if ShoppingPath == "milk":
-        input("Milk is $2, would you like to purchase?").lower()
-        if input in accepted_strings:
+        milkchoice = input("Milk is $2, would you like to purchase?").lower()
+        if milkchoice in accepted_strings:
             result=purchase(wallet,2)
             successful = result[0]
             wallet = result[1]
             if successful == True:
                 print("Milk purchased! It will arrive in 2-3 business days.")
-                
+                continue
             else: continue
     elif ShoppingPath =="bread":
-        input("Bread is $5, would you like to purchase?").lower()
-        if input in accepted_strings:
+        breadchoice=input("Bread is $5, would you like to purchase?").lower()
+        if breadchoice in accepted_strings:
             result=purchase(wallet,5)
             successful = result[0]
             wallet = result[1]
             if successful == True:
                 print("Bread purchased! It will arrive in 2-3 business days.")
-                
+                continue
             else: continue
     elif ShoppingPath =="candy":
-        input("candy is $1, would you like to purchase?").lower()
-        if input in accepted_strings:
+        candychoice=input("candy is $1, would you like to purchase?").lower()
+        if candychoice in accepted_strings:
             result=purchase(wallet,1)
             successful = result[0]
             wallet = result[1]
             if successful == True:
-                print("Milk purchased! It will arrive in 2-3 business days.")
-                
+                print("Candy purchased! It will arrive in 2-3 business days.")
+                continue
             else: continue
     elif ShoppingPath=="wallet":
-        print(wallet)
+        print("You have $",wallet,"in your balance.")
+        continue
     else: continue
 
 
