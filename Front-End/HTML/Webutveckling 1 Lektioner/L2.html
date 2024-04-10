@@ -1,0 +1,115 @@
+<html>
+    <body>
+    <h1>Hello, welcome to my website!</h1>
+    <p>Here is a paragraph with some information</p>
+    <hr>
+    <p>If you'd like to see some formatted text you use the PRE-tag</p>
+    <pre>    This is some formatted text.
+    Formatted text has many uses,
+    such as to present code or poetry
+    </pre>
+<!-- You can format text like this or you can use the tag <br> to go to the next line instead.
+        That would look like the following
+    <p> This is some formatted text.<br> Formatted text has many uses,<br> such as to present code or poetry.</p>-->
+    <a href="https://www.google.com/">This link opens Google in this window</a>
+<!-- <a> defines a link, keep the bracket open and reference to the link with href="Link in the bunny ears with https and all">
+     then close the tag and write the text to be displayed-->
+    <br>
+    <a href="https://www.google.com/" target="_blank">This link opens Google in a new tab</a>
+<!-- target is another attribute thats still in the opening tag. It has several different values
+    _self the standard, it will open the href in the same window
+    _blank opens the href in a new window
+    _parent opens the href in the parent frame (öppnar dokumentet i en (parent) ram)
+    _top opens the document in the whole window (öppnar dokumentet i hela fönstret) 
+    parent and top are mostly browser specific, self and blank are the most usual. Parent and top can be used for popup windows-->
+    <br>
+    <p> This peeled banana opens Google</p>
+    <a href="https://www.google.com/" target="_blank">
+    <img src="https://media.istockphoto.com/id/641886510/photo/peeled-whole-banana.jpg?s=612x612&w=0&k=20&c=GG8_fZDHn9Cqu7ME2SdPyAYrg99fjUUxs33HDyvi164=" width="400" height="200"> <!-- url (Uniform Resource Locator) / en länk -->
+    </a>
+    <!-- Här har vi en länk överst, sen en image i mitten med sourcen URL som sedan stängs på tredje raden.
+    Detta ska i teori så som jag förstå det, displaya en bild som man kan klicka på som en länk-->
+    <br>
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <br>
+    <a href="https://facebook.com/" target="_blank">This opens Facebook in a new tab</a>
+    <br>
+    <p>This unpeeled banana takes you to Facebook</p>
+    <a href="https://www.facebook.com/" target="_blank">
+    <img src="sources\Banana-Single.jpg" width="400" height="250">
+    <!-- Now we are referencing local images in our folder-->
+    </a>
+    <br>
+    <a href="mailto:pierre.gergi@yahoo.com"> Email Pierre </a>
+    <br>
+    <p>Click this smaller image to open Google</p>
+    <a href="https://www.Google.com/" target="_blank">
+    <img src="sources\Juvenile_Ragdoll.jpg" alt="This image is of a cat that links to google" width ="50%">
+    </a>
+    <!-- width and height is the size of the image in px,
+    you can also do % which takes the % you specify of the original image size
+    img= image src = image source, alt= hidden text that displays if image is unavailable
+    alt also helps search engines find the image (like tags)-->
+    <br>
+    <p style="color:green;font-size:50px"> This text is greeeeen and biiiiiiiiiig</p>
+    <!-- Style can be used for size, color, font etc. Separate several style options with a ;-->
+    <p style="color:blue;font-size:50px"> BLUEEEEEEEEEEEEE</p>
+    <p style="color:red;font-size:50px"> REEEEEEEEEEEEEEEEEEEEEEEEED</p>
+
+<!--   <a href="https://www.microsoft.com" target="_blank">
+    <img src="../huvudarbetsmappen\image\exempelbild.jpg" alt="Microsoft image link" width="100" height="100">
+    </a>
+    Here the jpg is not in the same folder or in another folder in the folder with the html file
+and so if you do "../" it backs out of the folder and looks again
+so if the path to html file is in banana\html and you do ../ it will go out to the folder that banana is in
+which could be apple, and apple also has huvudarbetsmappen, it will then find the image -->
+    <p title="Bananas are yummy">Hover over me and find a secret!.</p>
+<!-- title = tooltip, hover over the text and it will show the title text-->
+    <p style="background-color: bisque;color:red;font-size:50px;font-family:fantasy;" title="Secret message"> This has a custom background color, text color, size and font</p> 
+<!-- Lots of different style stuff here, background color, color, size, font and then a title for a secret tooltip-->
+    <p style="text-align: justify;font-size:50px"> This is a justified paragraph.</p>
+<!-- Different text formatting, there is left, center, right, justify
+justify evens the text out for formatting so its a big block-->
+    <p style="color:red"> Red text</p>
+    <h1 style="background-color:orange;">This is a heading</h1>
+    <h1 style="color:blue"> This is a heading</h1>
+    <p style="font-family: cursive;"> This is a paragraph</p>
+    <h1 style="font-size:50px;"> This is a heading</h1>
+    <p style="text-align: center;"> Centered paragraph</p>
+<!-- Different style stuff on different tags to try it out in an exercise -->
+<!-- 
+    <b> = bold
+    <strong> = bold
+    <i> = italic
+    <em> = kinda emphasizes/italic text to make it  easier to find for screen readers for people with vision problems
+    <mark> = highlight text, default color yellow
+    <del> strikes through text to "delete"
+    <ins> text has a underline to mark as its "inserted"
+    <sub> lowered text
+    <sup> raised text
+    <tag> </tag> = elements
+    style= = attribute
+    style="color:blue" = value
+-->
+
+
+
+
+
+<!-- HTML LISTS with numbers-->
+<ol>
+<li>Banana</li>
+<li> Apple</li>
+<li> Grape</li>
+</ol>
+
+<!-- HTML LISTS with dots-->
+<ul> 
+<li>Banana</li>
+<li> Apple</li>
+<li> Grape</li>
+
+</ul>
+    </body>
+</html>
