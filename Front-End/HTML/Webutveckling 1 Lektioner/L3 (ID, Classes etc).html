@@ -1,0 +1,165 @@
+<html>
+    <body>
+        <p>This is <b> bold</b></p>
+        <p>And<strong> strong </strong></p>
+        <p> <i>Italic</i> too</p>
+        <p>This text is <em>emphasized</em></p>
+        <p>I need to use a <mark>highlight</mark> here</p>
+        <p>Might need to <del>delete</del></p>
+        <p>And then <ins>insert</ins></p>
+        <p>Get a bit low with <sub>subscript</sub></p>
+        <p>Or higher up with <sup>superscript</sup></p>        
+        <p style="color:purple"> And now we are purple</p>
+        <p style="background-color: aqua;"> And now the background is aqua!</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<!-- if you type a ! and press tab it will auto fill stuff u need for each file type, html looks like the above
+Alt + shift + arrow keys duplicates a line of code
+ctrl + space supposedly auto completes code but i didnt try it in time
+alt+ arrows moves the line of code up or down
+ctrl + shift + K deletes the line you hover, or all of the lines you mark
+
+-->
+
+
+<!-- Html starts with html then <head>, head has meta tags, links and titles etc-->
+    <html>
+        <head>
+
+        </head>
+        <body>
+
+        </body>
+    </html>
+    <!-- Like so-->
+    
+    <!-- <div> is one of the most used elements for website layouts
+ Its used to group and structure the websites contents into divided areas.
+ Used with css.
+
+
+Id = #
+Id is used to make bookmarks in HTML code
+Its used by css and javascript to 
+kinda like a function in Python
+but for some reason its supposed to be used only once for compatability?
+functions seem to actually be more like classes
+
+    -->
+
+<head>
+    <title> Example for ID</title>
+    <style>
+        #GreenFantasy {
+            color:green;
+            font-size: 100px;
+            text-align: center;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="GreenFantasy"> Test test for ID</p>
+</body>
+
+<!-- Classes are used by css and javascript to pick one or several specific elements.
+    One css class can be used by several html elements on a page 
+head -> style -> css code
+-->
+<head>
+    <style>
+        .tomato {
+            background-color: red;
+            color:white;
+            text-align: center;
+        }
+        .banana {
+            font-family: serif;
+            color:orange;
+            background-color: aqua;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="tomato">
+        <h1> This is tomato class</h1>
+    </div>
+
+    <p> Random text in between to show how divs work</p>
+
+    <div class="banana">
+        <h1> This is banana class</h1>
+
+    </div>
+    <div class="tomato banana">
+        <p> This has both classes </p>
+    </div>
+</body>
+<!-- So classes can be used infinite like a function in python
+here we make a div to make a segment that uses the class city
+and then all elements inside of the div will use the class city as its settings
+therefore everything will have a red background with white test
+So here we have two different classes in two different divs with some text in between
+the divs that then dont get the attributes of the classes. As well as another that uses both classes!
+If there are confliciting attributes in the classes it will take the latter one. Like the last code that
+gets read.
+-->
+
+<!-- Certain websites can validate your code to make sure there arent any errors and such
+one site is 
+https://validator.nu/
+It can be good to run it through several sites as something that the first website might miss
+can be found by another.
+
+-->
+
+<html>
+    <head>
+        <link rel="StyleSheet" href="../../css/Style.css"
+    </head>
+    <body>
+        <p> This uses external css</p>
+    </body>
+</html>
+
+
+
+
+<html>
+    <head>
+        <link rel="StyleSheet" href="../../css/Style.css"
+    </head>
+    <body>
+        <h1 class="header"> <b>Welcome to my website</b> </h1>
+        <p class="paragraph">This is a simple example of using external css for styling</p>
+    </body>
+</html>
+
+<!-- style.css looks like this
+h1{
+    font-size:50px;
+    color: blue;
+    text-align:center;
+}
+p{
+    font-family: monospace;
+    text-align: center;
+    color: green;
+    padding-right:300px;
+}
+-->

@@ -1,0 +1,11 @@
+.header{
+    font-size:50px;
+    color: blue;
+    text-align:center;
+}
+.paragraph{
+    font-family: monospace;
+    text-align: center;
+    color: green;
+    padding-right:300px;
+}

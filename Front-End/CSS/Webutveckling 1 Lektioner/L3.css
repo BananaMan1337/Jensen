@@ -1,0 +1,21 @@
+/* kommerntar görs på detta sätt
+CSS är design delen av HTML, ibland kan man använda css inom HTMl, typ som med style
+
+
+
+Inline css -> inne i taggen tex <p style=>
+Internal css -> <style> </style>
+External css -> link till annan fil
+
+
+Olika sätt som css körs
+*/ 
+/*<html>
+    <head>
+        <link rel="StyleSheet" href="../../css/Style.css"
+    </head>
+    <body>
+        <p> This uses external css</p>
+    </body>
+</html>
+*/
