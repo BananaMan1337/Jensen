@@ -1,0 +1,11 @@
+div{
+     border: 2px solid green;
+     background-color: yellow;
+     height:100px;
+     width:50%;
+}
+.divclass{
+    border: 2px dashed green;
+    background-color: blue;
+    height:100px;
+    width:50%;}

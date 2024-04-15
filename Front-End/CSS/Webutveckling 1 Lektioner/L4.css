@@ -1,0 +1,9 @@
+p {border: 1px solid #000000}
+/* Border has a lot of different options, in this case we have solid but there are more options.
+hex code colors can be used */
+
+/* Margins can be put all in one line, if you do magin 10 10 10 10 it will do 10 to north-right-bottom-left.
+it always goes clockwise
+margin can use absolute units and also relative along with auto
+You can also do negative values to make it go back, out of range etc
+*/
