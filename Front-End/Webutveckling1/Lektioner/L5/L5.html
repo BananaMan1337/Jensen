@@ -1,0 +1,101 @@
+<!--
+    Clear is used to make different elements not overlap the cleared element will go to the next empty line
+    clear attribute can have the value none, left, right, both
+
+    overflow:auto is used to automatically make images fit insite of divs and such. Makes it stay inside the border
+    coupled with clear you can get very clean elements and images
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Sources/L5Exercise1.css">
+    </head>
+    <body>
+        <h2> Without Clearfix</h2>
+        <div>
+            <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juvenile_Ragdoll.jpg/640px-Juvenile_Ragdoll.jpg" alt="Kitten" width="170" height="170">
+            This image floats right but it overflows.
+        </div>
+        <h2 style="clear:right"> With Clearfix</h2>
+        <div class="clearfix">
+            <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juvenile_Ragdoll.jpg/640px-Juvenile_Ragdoll.jpg" alt="Kitten" width="170" height="170">
+            We fixed this by adding a clearfix with overflow.
+        </div>
+    </body>
+</html>
+<!-- Exercise 1-->
+<!-- Overflow has auto does as above and also adds a field you can scroll inside the element if its too big for the element
+    Overflow hidden would make the image instead get cutoff so it doesnt spill out -->
+   
+   
+   
+   
+   
+   
+   
+   
+    <!--
+    Exercise 2 header nav section article aside footer
+
+text decoration none removes underline
+
+
+
+nav a means all <a> under nav gets affected
+
+You can also do
+section, article{
+
+}
+to make the same css apply to more than one thing.
+-->
+
+<html>
+    <head>
+        <title> Sams Grocery</title>
+        <link rel="stylesheet" href="Sources/L5Exercise2.css">
+    </head>
+    <header> 
+        <h1> Sams Grocery</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="#"> Home</a>
+            <a href="#"> About us</a>
+            <a href="#"> Contact us</a>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>Welcome to our website!</h2>
+            <p> Here you'll find information about us and what we do.</p>
+        </article>
+    </section>
+        <aside style="text-align: center;">
+            <h3> Current offers</h3>
+            <p> See our latest offers! Everything is 15kr!</p>
+            <img src="https://img.offers-cdn.net/assets/uploads/offers/se/2822898/bananer-normal.jpeg">
+            <img src="https://pricespy-75b8.kxcdn.com/product/standard/280/593908.jpg">
+            <img src="https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_330,w_330/v1663830660/cloud/259051/Gifflar%20Kanel.jpg" >
+            <img src="https://www.haugen-gruppen.se/products/279051.jpg" >
+            <img src="https://bilder.kolonial.no/prod/local_products/4135ed71-6d07-4200-b7d2-0c9fb752e028.jpg?auto=format&fit=max&w=1000&s=7d24978860ef52f9c8200c735c0d8867" >
+            <img src="https://www.santamariaworld.com/contentassets/17e1a6a5dcd943de9cf9b6d96b3c67a1/102059.png" >
+            <img src="https://www.santamariaworld.com/optimized/share/globalassets/_products/tex-mex/200088.png" >
+            <img src="https://media.apotea.se/product-images/XL/via-tvattmedel-color-15-kg-2.jpg" >
+            <img src="https://assets.icanet.se/image/upload/cs_srgb/t_product_large_2x_v1/v1668767900/zcwunvcjpijfsda6zo9p.webp" >
+            <img src="https://d1ax460061ulao.cloudfront.net/1000x1000/d/4/d45c62d1832401464bdb3bba2e79c093.jpg" >
+            <img src="https://res.cloudinary.com/coopsverige/images/e_sharpen,f_auto,fl_clip,fl_progressive,q_90,c_lpad,g_center,h_330,w_330/v1637224998/cloud/228194/Turkisk%20Yoghurt%2010%25.jpg" >
+
+
+        </aside>
+    
+    <footer>
+        <h3> &copy 2024 Samuel, All rights reserved.</h3>
+    </footer>
+</html>
+
+
+
+<!-- list-style-type:none removes dots and such from lists
+border can have left right top bottom to have a border at just one place
+-->

@@ -1,0 +1,25 @@
+header, footer{
+    background-color: teal;
+    color: white;
+    padding: 50;
+    text-align: center;
+}
+nav{
+    background-color: black;
+    padding: 50;
+    text-align: center;
+}
+section, aside{
+    padding: 50 ;
+    margin-left: 100;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: aquamarine;
+}
+img {
+    height:20%
+}
