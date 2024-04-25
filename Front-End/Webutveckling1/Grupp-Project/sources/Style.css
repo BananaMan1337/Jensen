@@ -5,7 +5,7 @@ ul {
     overflow: hidden;
     background-color: lavenderblush;
     position: relative;
-    left: 43%;
+    margin: auto;
     width: fit-content;
     }
     
@@ -35,7 +35,7 @@ header img{
     width:15%;
     display: inline;
     position:relative;
-    left: 29%;
+    left: 27%;
 }
 header {
     background-color: aliceblue;
@@ -43,4 +43,58 @@ header {
 Header h1{
     background-color: aliceblue;
     text-align: center;
+}
+.homepre{
+    background-color: #DFC5FE;
+    font-size: x-large;
+    font-family: cursive;
+    border: 1px solid #6C3461;
+    width: fit-content;
+    text-align:center;
+    margin: auto;
+}
+Section h1{
+    text-align: center;
+    
+}
+.nailexample{
+    width:10%;
+    position: relative;
+    left: 25%;
+    padding: 25px;
+}
+Section p{
+    background-color: #DFC5FE;
+    font-size: large;
+    font-family: cursive;
+    border: 1px solid #6C3461;
+    width: fit-content;
+    margin: auto;
+}
+footer{
+    position:fixed;
+    bottom: 0;
+}
+.contactform{
+    width: fit-content;
+    background-color: #DFC5FE;
+    border: 1px solid #5D1451;
+    margin: auto;
+}
+.tyfcu {
+    background-color: #DFC5FE;
+    width:fit-content;
+    margin: auto;
+    font-size: xx-large;
+}
+.adress {
+    width: fit-content;
+    position: absolute;
+    background-color: lavender;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.googlemaps {
+    position: fixed;
+    left:0;
 }

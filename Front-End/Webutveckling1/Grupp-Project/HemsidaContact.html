@@ -19,6 +19,38 @@
         <li><a class="active" href="HemsidaContact.html">Contact Us</a></li>
 </ul>
 </nav>
+<section> 
+    <a class="googlemaps" href="https://www.google.com/maps/place/The+Royal+Palace/@59.326642,18.070857,17.49z/data=!4m6!3m5!1s0x465f9d587e4c4a01:0xbdf97a9648763e36!8m2!3d59.3268215!4d18.0717194!16zL20vMDF2cmx0?entry=ttu" target="_blank">
+        <img class="googlemaps" src="sources/images/MapsKung.png" alt="The Swedish Royal Palace">
+    </a>
+    <pre class="adress">
+ Example Road 37
+        1337 71
+      Stockholm
+    Click the map
+    for directions
+        </pre>
+</section>
+<section class="contactform">
+    <h2>Contact Form</h2>
+    <form action="HemsidaFormSubmit.html">
+      <fieldset>
+        <legend>What treatment are you looking for?</legend>
+        <label><input id="Spa" type="radio" name="Treatment-Type" value="Spa" checked> Spa</label>
+        <label><input id="Nail" type="radio" name="Treatment-Type" value="Nail"> Nails</label>
+        <label><input id="Hair" type="radio" name="Treatment-Type" value="Hair"> Hair</label>
+      </fieldset>
+      <fieldset>
+        <legend>What times are you free?</legend>
+        <input id="Mornings" type="radio" name="Availability" value="Mornings" checked> <label for="Mornings">Mornings</label>
+        <input id="Afternoons" type="radio" name="Availability" value="Afternoons"> <label for="Afternoons">Afternoons</label>
+        <input id="Any time" type="radio" name="Availability" value="Any time"> <label for="Any time">Any Time</label>
+      </fieldset>
+      <input id="Terms" type="checkbox" name="Terms" value="Agreed" required> <label for="Terms">I have read and agree to Stockholm Spa & Nails terms and conditions.</label> <br>
+      <input type="text" name="Phone Number" placeholder="Enter your phone number" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 <footer>
     <h3> &copy 2024 Samuel, All rights reserved.</h3>
 </footer>
