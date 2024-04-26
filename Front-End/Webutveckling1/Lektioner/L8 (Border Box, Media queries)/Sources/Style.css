@@ -1,0 +1,236 @@
+/* Style the top navigation bar */
+.nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .nav a {
+    float: left;
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .nav a:hover {
+    background-color: gray;
+    color: black;
+  }
+  
+  /* På skärmar som är 600 pixlar breda eller mindre, kan du lägga menylänkarna ovanpå varandra istället för bredvid varandra. */
+  @media screen and (max-width: 600px) {
+    .nav a {
+      float: none;
+      width: 100%;
+          display: block;
+          
+    }
+  }
+  
+  
+ /* 
+  box-sizing: border-box;
+	I CSS definierar egenskapen "box-sizing" hur bredden och höjden på ett element ska beräknas. Om du sätter "box-sizing: border-box;" på ett element, inkluderas elementets (borders) och (padding) i elementets totala bredd och höjd. 
+Det innebär att:
+Till exempel, om du sätter "width: 100px; height: 100px; padding: 20px; border: 5px solid black;" på ett element med "box-sizing: border-box;", kommer det totala utrymmet som elementet upptar fortfarande att vara exakt 100x100 pixlar, inklusive både padding och border. */
+.column {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 900px) {
+    .column {
+      width: 25%; /* Fyra kolumner på ännu större skärmar */
+      float: left;
+    }
+  }
+
+  @media (max-width: 899px) and (min-width: 601px) {
+    .column {
+      width: 50%; /* Två kolumner på större skärmar */
+      float: left;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      width: 100%; /* Full bredd på mindre skärmar */
+      float: none;
+    }
+  }
+  .column {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 900px) {
+    .column {
+      width: 10%; /* 10 kolumner på ännu större skärmar */
+      float: left;
+    }
+  }
+
+  @media (max-width: 899px) and (min-width: 601px) {
+    .column {
+      width: 50%; /* Två kolumner på större skärmar */
+      float: left;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      width: 100%; /* Full bredd på mindre skärmar */
+      float: none;
+    }
+  }
+  
+  
+
+  .example {
+    background-color: yellow;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .example {
+      display: none;
+    }
+  }
+
+
+  /* Standardstilar för alla skärmstorlekar */
+.element {
+  background-color:lightblue;
+  }
+  
+  /* Media query för skärmar som är mindre än 600px */
+  @media (max-width: 600px) {
+    .element {
+      display: none; /* Dölj elementet på mindre skärmar */
+    }
+  }
+  
+  .example {
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .example {
+      font-size: 60px;
+      background-color: blue;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .example {
+      font-size: 20px;
+      background-color: yellow;
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .gallery-item {
+    width: 100%;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  body, html {
+    height: 100vh;
+}
+
+/*Värde: 100vh — Enheten "vh" står för "viewport height" (vyportshöjd). Det är en relativ enhet baserad på höjden av vyporten, som är den synliga delen av webbläsarfönstret. 100vh betyder 100% av vyportens höjd.
+
+CSS-koden säkerställer att <body>- och <html>-elementen tar upp hela höjden av webbläsarfönstret. Detta används ofta i webbdesign för att skapa sektioner som täcker hela skärmen och exakt anpassar sig till storleken på vyporten, oavsett skärmstorlek.
+*/
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+				"sidebar"
+				"sect1"
+        "sect2"
+        "sect3"
+        "main"
+        "footer";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #007FFF;
+}
+
+header {
+    grid-area: header;
+    background-color: #91C8FF;
+}
+
+section1 {
+    grid-area: sect1;
+    background-color: #B3D8FD;
+}
+section2 {
+    grid-area: sect2;
+    background-color: #5E86AF;
+}
+section3 {
+    grid-area: sect3;
+    background-color: #6D9FD2;
+}
+main {
+    grid-area: main;
+    background-color: #7DA9D5;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #588EC3;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto 25% 25% 25%;
+        grid-template-rows: 20% 30% auto 20%;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sect1  sect2  sect3"
+            "sidebar main   main   main"
+            "footer footer footer footer";
+    }
+
+}  

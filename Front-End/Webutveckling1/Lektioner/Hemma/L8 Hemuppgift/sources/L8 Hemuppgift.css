@@ -1,0 +1,67 @@
+body, html {
+    height: 100vh;
+    }
+/* Makes it use up whole page. vh is viewport unit and 100 means full */
+body {
+    display:grid;
+    grid-template-columns: 100%;
+    /* Not fully sure what line above does im guessing column size 100%? */
+    grid-template-areas:
+        "top"
+		"side"
+		"area1"
+        "area2"
+        "area3"
+        "body"
+        "foot";
+}
+/* Here we make the body be a grid. grid template areas is where we define different names for our columns
+its used further down */
+
+header {
+    grid-area: top;
+    background-color: #91C8FF;
+}
+aside {
+    grid-area: side;
+    background-color: #007FFF;
+}
+section1 {
+    grid-area: area1;
+    background-color: #B3D8FD;
+}
+section2 {
+    grid-area: area2;
+    background-color: #5E86AF;
+}
+section3 {
+    grid-area: area3;
+    background-color: #6D9FD2;
+}
+main {
+    grid-area: body;
+    background-color: #7DA9D5;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #588EC3;
+}
+/* Here above we assigned what grid area all of these elements/selectors have*/
+@media only screen and (min-width: 768px) {
+    body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 25% 25% 25%;
+    grid-template-rows: 20% 30% auto 20%;
+    /* Not fully sure yet what the two rows above do. */
+    grid-template-areas:
+    "top top top top"
+    "side area1 area2 area3"
+    "side body body body"
+    "foot foot foot foot";
+    }
+    }/* Here we made it display as a grid if the screen is a certain px big. 
+    we actually build the grid within the "" to how we want it. Each line is a row of grids and you can put whatever grid
+    u want in whatever shape you want
+     */

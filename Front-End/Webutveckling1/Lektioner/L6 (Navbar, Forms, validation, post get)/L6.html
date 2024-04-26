@@ -1,0 +1,122 @@
+<html>
+    <link rel="stylesheet" href="Sources/Style.css">
+    <link rel="javascript" href="Sources/monkaS.js">
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+
+<html>
+<body>
+<h2>Vertical Navigation Bar</h2>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>
+<!-- När en användare klickar på knappen "submit", samlas all data in som har fyllts i på formuläret och skickas till den URL som anges i action-attributet.-->
+
+<html>
+<body>
+<h1>The input formaction attribute</h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password">
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+  
+<p>
+    Input-fält med initiala (standard) värden:</p>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <p>Attributet "readonly" för input specificerar att det endast kan läsas.</p>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <p>Attributet "disabled" för input betyder att fältet ska vara inaktiverat.</p>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+
+    <form>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+                     <label for="message">Message:</label><br>
+              <textarea id="message" name="message"></textarea><br>
+                    
+                    
+                    <!-- När användaren kryssar i denna ruta och skickar formuläret, kommer värdet "Value" att skickas tillsammans med formuläret om det är markerat.-->
+            
+                    <p><b>Select your favorite color:</b></p>
+              <input type="checkbox" id="red" name="color" value="red">
+              <label for="Red">Red</label>
+                <input type="checkbox" id="blue" name="color" value="blue">
+              <label for="blue">Blue</label>
+                    <br>
+                    <p><b>Select your age:</b></p>
+                18-25
+                    <input type = "radio" name = "age" value = "18-25">
+                      +25<input type = "radio" name = "age" value = "+25"><br><br>
+                <button type ="submit">Submit</button>
+                
+        </form>
+            
+        <!DOCTYPE html>
+<html>
+<head>
+	<title>Exempel på HTML-formulär med validering</title>
+	
+</head>
+<body>
+
+	<h1>Kontakta oss</h1>
+
+	<form method="post" action="#">
+		<label for="name">Namn:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">E-postadress:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="message">Meddelande:</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+
+		<input type="submit" value="Skicka">
+
+	</form>
+
+</body>
+</html>
+<form action="#/ett fil namn" method="post">
+    <input type="text" name="firstname" required placeholder="Förnamn">
+    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-postadress">
+    <input type="number" name="age" min="18" max="65" placeholder="Ålder">
+    <input type="submit" value="Skicka">
+  </form>
+  
+        

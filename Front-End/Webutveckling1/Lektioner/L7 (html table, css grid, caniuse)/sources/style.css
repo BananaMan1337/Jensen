@@ -1,0 +1,367 @@
+table {
+    width: 100%;
+		 border-collapse: collapse; /* Tar bort mellanrum mellan borders */
+}
+   
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightblue; /* Lägger till en bakgrundsfärg för rubrikerna */
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 150px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  
+  .item {
+   background-color: #d3eafd;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .container {
+    display: grid;
+      grid-template-columns: auto auto;
+      gap: 25px 25px;
+   
+  }
+  .item {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .container {
+    display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      gap: 25px 50px;
+    background-color: #2196F3;
+    padding: 5px;
+  }
+  .item {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .container {
+    display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 25px 50px;
+    background-color: #2196F3;
+    padding: 5px;
+  }
+  .item {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+       background-color: yellow;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  
+  }
+  
+  .container {
+    display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 25px 50px;
+    background-color: #2196F3;
+    padding: 5px;
+  }
+  .item {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+      background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 100px auto auto 10% auto;
+    gap: 5px;
+    background-color: #ff7800;
+    padding: 10px;
+  }
+  
+  
+  .unified {
+   background-color: #f6f7bc;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+  grid-column: 1 / 5;
+  }
+  
+  .item13 {
+  grid-column: 1 / span 3;
+  
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100px auto auto 10% auto;
+    gap: 5px;
+    background-color: #ff7800;
+    padding: 10px;
+  }
+  
+  
+  .item {
+   background-color: #f6f7bc;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+  grid-row: 1 / 3;
+  
+   background-color: #f6f7bc;
+   text-align: center;
+   padding: 20px;
+   font-size: 30px;
+  }
+  
+  .item8 {
+  
+  grid-row: 1 / span 3;
+  background-color: #f6f7bc;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px auto;
+    gap: 15px;
+    background-color: green;
+    padding: 10px;
+  }
+  
+  
+  .unified {
+   background-color: #f6f7bc;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+  grid-column: 1 / 4;
+  }
+  
+  .item2 {
+  grid-row: 2 / span 3;
+  
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px auto;
+    gap: 15px;
+    background-color: green;
+    padding: 10px;
+  }
+  
+  
+  .item {
+   background-color: #f6f7bc;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+   /* Styles for the first child of each .item */ 
+    /*nth-delen refererar till positionen för elementet du vill välja, och child betyder att du väljer ett barn-element till dess förälder.*/ 
+  .item:nth-child(1) 
+  {grid-column: 1 / 4; }
+  
+  
+  /* Styles for the second child of each .item */
+  .item:nth-child(3) 
+  {grid-row: 2 / span 3; }
+  
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tre kolumner, den andra tar upp dubbelt så mycket utrymme som de andra */
+    grid-template-rows: 50px 100px; /* Två rader, den andra tar upp resterande utrymme */
+          gap: 10px;
+  
+  }
+  
+  .item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "sidebar footer footer";
+    grid-gap: 10px;
+  }
+  
+  .item1 {
+    grid-area: header;
+    background-color:red;
+  }
+  
+  .item2 {
+    grid-area: sidebar;
+    background-color: blue;
+  }
+  
+  .item3 {
+    grid-area: main;
+    background-color: yellow;
+  }
+  
+  .item4 {
+    grid-area: footer;
+    background-color: orange;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+    grid-template-rows: 100px 200px 100px;
+    grid-gap: 20px;
+  }
+  
+  .item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .item1 {
+    grid-area: header;
+  }
+  
+  .item2 {
+    grid-area: main;
+  }
+  
+  .item3 {
+    grid-area: sidebar;
+  }
+  
+  .item4 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "sidebar main main"
+      "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr) auto; /*Rader med `auto` kommer att anpassa sin höjd baserat på sitt innehåll.*/
+  }
+  
+  .header {
+    grid-area: header;
+      background:red;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+      background:blue;
+  }
+  
+  .main {
+    grid-area: main;
+      background:yellow;
+  }
+  
+  .footer {
+    grid-area: footer;
+      background:orange;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "sidebar sidebar main main main main"
+      "footer footer footer footer footer footer";
+    grid-template-rows: 100px 200px auto;
+  }
+  
+  
+  .header,.sidebar, .main, .footer{
+      font-size:30px;
+      text-align:center;
+      color:white;
+      border: 1px dashed black; 
+  }
+  
+  .header {
+    grid-area: header;
+      background:orange;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+      background:lightgreen;
+  }
+  
+  .main {
+    grid-area: main;
+          background:lightblue;
+  
+  }
+  
+  .footer {
+    grid-area: footer;
+          background:gray;
+  
+  }
+  
+  

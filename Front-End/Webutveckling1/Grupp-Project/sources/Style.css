@@ -97,4 +97,5 @@ footer{
 .googlemaps {
     position: fixed;
     left:0;
+    width:350px;
 }
