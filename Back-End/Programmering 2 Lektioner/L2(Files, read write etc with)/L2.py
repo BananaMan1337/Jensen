@@ -191,13 +191,22 @@ deltagarna = ['Samer', 'Olivia', 'Ove', 'Sara']
 
 if not os.path.exists('d:\my_friends'):
 #if the path does not exist
-os.makedirs('d:\my_friends')
+    os.makedirs('d:\my_friends')
 #make the path
 # Skriv till filen 'exempel.txt' inuti mappen 'my_friends'
 with open('d:\my_friends\exempel.txt', 'w') as fil:
     #open the file however there is no file?
     #Think teacher made a mistake, this would return an error as the file doesnt exist even if we make the directory, we have to make the file too
 
-for y in deltagarna:
+    for y in deltagarna:
 #For every deltagare write the below
-fil.write('Hej ' + y + '!\n') 
+        fil.write('Hej ' + y + '!\n') 
+
+
+with open("d:\kompisar.txt", "r") as file:
+    line = file.read()
+    names = line.strip().split(",")
+    for name in names:
+        print("Hej," + name.strip() + "! Trevlig helg.")
+#Hemuppgift, denna läser en fil och tar allt i den, strippar extra spaces och tar orden mellan komma tecken
+#som den sen säger hej till.

@@ -1,3 +1,5 @@
-with open("Back-End\Programmering 2 Lektioner\L2(Files, read write etc with)\Examplefile.txt", "r") as examplefile:
-    content = examplefile.read()
-print("The contents of examplefile.txt is",content)
+with open("d:\kompisar.txt", "r") as file:
+    line = file.read()
+    names = line.strip().split(",")
+    for name in names:
+        print("Hej," + name.strip() + "! Trevlig helg.")
