@@ -5,6 +5,11 @@
 #the answer as to what they pick
 
 
+#KLASS SOM MALL FÖR FIENDER
+#RANDOMIZED RACE, CLASS, LEVEL (LEVEL INOM -3 - +3 FRÅN DIN LEVEL)
+#IF MAGE ATTACK "THEY CAST A FIRE BALL"
+#"IF WARRIOR "THE GOBLIN SWINGS THEIR AXE"
+
 
 #region Start
 name=input("What is your name?")
