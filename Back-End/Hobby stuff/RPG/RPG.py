@@ -18,6 +18,9 @@
 #Battle i separat fil som callas när det är en fight, så körs allt där och matar tillbaka loot osv
 
 
+#Gör alla paths till olika filer i funktioner som runnas när man väljer path?
+#health variable
+
 #Inventory function som fungerar med wallet function
 #
 
