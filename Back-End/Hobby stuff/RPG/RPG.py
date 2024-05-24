@@ -1,20 +1,8 @@
-#def bookshelffunction(var1,var2):
-#    strint = var1 + var2
-#    return strint
 #Use a function with a list to list all the options instead of print everytime and then call the function and an input to get 
 #the answer as to what they pick
 
+#File handling för att göra ett inventory dokument?
 
-#KLASS SOM MALL FÖR FIENDER
-#RANDOMIZED RACE, CLASS, LEVEL (LEVEL INOM -3 - +3 FRÅN DIN LEVEL)
-#IF MAGE ATTACK "THEY CAST A FIRE BALL"
-#"IF WARRIOR "THE GOBLIN SWINGS THEIR AXE"¨
-#Lista med strings som den kan välja. Sen typ 
-#Randomizedrace = random(Goblin, Human, Elf, blabla)
-#Randomizedclass = random(Warrior, Mage, Thief, blabla)
-#Randomizedlevel = random(1-10)
-#enemy1 = EnemyGenerator(RandomizedRace,RandomizedClass, RandomziedLevel)
-#random()
 #Battle i separat fil som callas när det är en fight, så körs allt där och matar tillbaka loot osv
 
 
@@ -22,7 +10,10 @@
 #health variable
 
 #Inventory function som fungerar med wallet function
-#
+#battle sequence adds exp to experience variable. 
+#If experiece >= 100 
+#   experience = 0
+#   Level = 2
 
 #region Start
 name=input("What is your name?")
@@ -38,7 +29,9 @@ while True:
         print("Please enter only numbers and without decimals.")
         continue
 #endregion
-
+Health = 100
+PlayerLevel = 1
+Experience = 0
 #region Wallet & Money
 wallet = 0
 def purchase (wallet, price):
