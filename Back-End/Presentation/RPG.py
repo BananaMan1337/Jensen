@@ -1,9 +1,10 @@
-#File handling för att göra ett inventory dokument?
- 
+
 #battle sequence adds exp to experience variable. 
 #If experiece >= 100 
 #   experience = 0
 #   Level = 2
+#fix potion in battle sequence
+
 import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 filename = "inventory.txt"
