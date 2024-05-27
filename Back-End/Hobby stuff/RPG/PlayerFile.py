@@ -12,15 +12,16 @@ class PlayerGen:
         self.Charisma = Charisma
     def PlayerAttack(self):
         from EnemyGenerator import Enemy1
-        global EnemyHealth
-        global PlayerLevel
         print(f"You attack the enemy {Enemy1.EnemyRace}")
         Damage = self.Strength + self.PlayerLevel
         Enemy1.EnemyHealth = Enemy1.EnemyHealth - Damage
         print(f"You deal {Damage} damage to the enemy {Enemy1.EnemyRace}")
     def InspectPlayer(self):
         return print(f"Name: {self.Name}\nAge: {self.Age}\nLevel: {self.PlayerLevel}\nHealth: {self.Health} HP")
-   
+    def PlayerBattle(self):
+        from BattleSequence import Battle
+        global Player
+        Battle()
    
 def PlayerGenerate():
     try:
@@ -34,7 +35,8 @@ def PlayerGenerate():
         Health = 50
         Experience = 0
         Player = PlayerGen(Name, Age, PlayerLevel, Health, Experience, Strength, Intellect, Agility, Charisma)
+        return Player
     except ValueError:
         print("Please enter only numbers and without decimals.")
         PlayerGenerate()
-    return Player
+  

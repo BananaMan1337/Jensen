@@ -1,5 +1,4 @@
 import random
-from RPG import Player
 #from RPG import Player.Health, PlayerLevel, Experience
 
 class Enemy:
@@ -38,4 +37,3 @@ def Generate():
     MobHealth = 30 + Level
     Enemy1 = Enemy(random.choice(Race), random.choice(Class), Level, MobHealth)
     return Enemy1
-Enemy1 = Generate()

@@ -6,9 +6,9 @@
 #If experiece >= 100 
 #   experience = 0
 #   Level = 2
-
-import PlayerFile
-Player = PlayerFile.PlayerGenerate()
+from PlayerFile import PlayerGenerate
+global Player
+Player = PlayerGenerate()
 Player.InspectPlayer()
 #region Wallet & Money
 wallet = 0
@@ -22,6 +22,9 @@ def purchase (wallet, price):
         return False, wallet
 #endregion
 
+Player.PlayerBattle()
+
+    
 #region Start Choice
 print("You awaken in a locked room. You cannot remember anything, but you know you dont want to stay here.")
 while True:
