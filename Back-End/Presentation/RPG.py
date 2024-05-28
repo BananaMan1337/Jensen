@@ -43,7 +43,7 @@ class PlayerGen:
         enemy.Health = enemy.Health - Damage
         print(f"You deal {Damage} damage to the enemy {enemy.Race}")
     def Inspect(self):
-        return f"Name: {self.Name}\nAge: {self.Age}\nLevel: {self.Level}\nHealth: {self.Health} HP"
+        return print(f"Name: {self.Name}\nAge: {self.Age}\nLevel: {self.Level}\nHealth: {self.Health} HP")
  
 def PlayerGenerate():
  
