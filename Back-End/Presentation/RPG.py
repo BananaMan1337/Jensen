@@ -54,7 +54,7 @@ def PlayerGenerate():
         Agility = int(ValidatedInput("On a scale of 1-10 how agile are you?\n", 1, 10))
         Charisma = int(ValidatedInput("On a scale of 1-10 how good are you with people?\n", 1, 10))
         PlayerLevel = 1
-        Health = 20
+        Health = 30
         Experience = 0
         spacing()
         return PlayerGen(Name, Age, PlayerLevel, Health, Experience, Strength, Intellect, Agility, Charisma)
