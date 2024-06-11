@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var input1 = prompt("First number");
+    if (input1 == null || input1.trim() == ""){
+        alert("Bad input");
+    } else {
+        var input2 = prompt("Second number");
+        if (input2 == null || input2.trim() == ""){
+            alert("Bad input");
+    }   else {  
+        var num1 = parseFloat(input1);
+        var num2 = parseFloat(input2);
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("One of the inputs was not a number");
+    } else{
+        var product = num1*num2;
+        alert(num1, " x ",num2," = ", product);
+        }
+    }
+}
+
+    </script>
+</body>
+</html>

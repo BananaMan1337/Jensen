@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var namn=prompt("Vad heter du?")
+        document.write("Hej " + namn,"!")
+        switch (banana) {
+            case banana:
+                document.write("BANANEEER")
+                break
+            case apple:
+                document.write("Apppleeee")
+                break
+            default:
+                document.write(" :( ")
+                break
+        }
+    </script>
+</body>
+</html>
+<!-- 
+Prompt (input)
+switch case (Like match case in Python, not sure if match also exists in JS) default is like _ wildcard
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function checkNumber() {
+            let x = Math.sign(number)
+            if (x == 1) {
+                document.write("Your number was positive")
+            } else if (x == -1) {
+                document.write("You number was negative")
+            } else if (x == 0) {
+                document.write("Your number was zero")
+            } else {
+                document.write("Something went wrong, your number couldnt be checked")
+            }
+        }
+    var number = prompt("Input number")
+    checkNumber(number);
+        
+    </script>
+</body>
+</html>
+<!-- 
+functions
+math.sign
+if else if (not elif)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function checkNumber() {
+            let x = Math.sign(number)
+            switch (x){
+                case (1):
+                    document.write("Your number was positive")
+                    break
+                case (-1):
+                    document.write("You number was negative")
+                    break
+                case (0): 
+                    document.write("Your number was zero")
+                    break
+                default:
+                    document.write("Something went wrong, your number couldnt be checked")
+                    break
+            }
+        }
+    var number = prompt("Input number")
+    checkNumber(number);
+        
+    </script>
+</body>
+</html>
+
+<!-- 
+Same as above but with switch/case instead of if else if-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var input1 = prompt("First number");
+    if (input1 == null || input1.trim() == ""){
+        alert("Bad input");
+    } else {
+        var input2 = prompt("Second number");
+        if (input2 == null || input2.trim() == ""){
+            alert("Bad input");
+    }   else {  
+        var num1 = parseFloat(input1);
+        var num2 = parseFloat(input2);
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("One of the inputs was not a number");
+    } else{
+        var product = num1*num2;
+        alert(num1, " x ",num2," = ", product);
+        }
+    }
+}
+
+    </script>
+</body>
+</html>
+IDK WHATS WRONG CHECK LATER  -->
