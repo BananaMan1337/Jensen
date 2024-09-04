@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DULL kontakt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/logga.png" alt="Bröllopsfotografering" width="50%" />
+    </header>
+    <div class="topnav" id="myTopnav">
+      <nav>
+        <ul>
+          <li><a href="Startsida.html">Hem</a></li>
+          <li><a href="bokning.html">Bokning</a></li>
+          <li><a href="bandfoto.html">Pressbilder</a></li>
+          <li>
+            <a class="active" href="kontaktsida.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <main>
+      <div class="kontakt">
+        <h2>Contact Us</h2>
+        <form
+          id="contactForm"
+          action="#"
+          method="get"
+          onsubmit="return validateForm()"
+        >
+          <label for="name">Name:</label>
+          <br />
+          <input type="text" id="name" name="name" />
+          <br /><br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" />
+          <br /><br />
+          <label for="message">Message:</label>
+          <br />
+          <textarea id="message" name="message"></textarea>
+          <br /><br />
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+    <br />
+    <footer>
+      <p>&copy; 2024 Emil & Samuel</p>
+    </footer>
+  </body>
+</html>
